@@ -1,5 +1,7 @@
 // API service for backend communication
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const API_BASE_URL = (import.meta.env.PROD && import.meta.env.VITE_API_URL?.includes('localhost'))
+  ? '/api'
+  : (import.meta.env.VITE_API_URL || '/api');
 
 /**
  * Make API request
