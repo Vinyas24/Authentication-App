@@ -1,4 +1,5 @@
 // Database configuration for Aiven Cloud MySQL
+import 'dotenv/config';
 export const dbConfig = {
   host: 'mysql-3c580c50-v1ny45248-6b02.i.aivencloud.com',
   port: 16892,
